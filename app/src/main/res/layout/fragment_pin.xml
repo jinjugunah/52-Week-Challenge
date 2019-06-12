@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvOne"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="1"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvFour"
+        app:layout_constraintEnd_toEndOf="@+id/tvSeven"
+        app:layout_constraintStart_toStartOf="@+id/tvSeven" />
+
+    <TextView
+        android:id="@+id/tvTwo"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="2"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvFive"
+        app:layout_constraintEnd_toStartOf="@+id/tvSix"
+        app:layout_constraintStart_toEndOf="@+id/tvFour" />
+
+    <TextView
+        android:id="@+id/tvThree"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="3"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSix"
+        app:layout_constraintEnd_toEndOf="@+id/tvNine"
+        app:layout_constraintStart_toStartOf="@+id/tvNine" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="@dimen/pin_entry_size"
+        android:layout_height="@dimen/pin_entry_size"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circular_white_bg"
+        android:gravity="center"
+        android:text="@string/masked_input"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvOne"
+        app:layout_constraintEnd_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="@dimen/pin_entry_size"
+        android:layout_height="@dimen/pin_entry_size"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/circular_white_bg"
+        android:gravity="center"
+        android:text="@string/masked_input"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="@dimen/pin_entry_size"
+        android:layout_height="@dimen/pin_entry_size"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/circular_white_bg"
+        android:gravity="center"
+        android:text="@string/masked_input"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="@dimen/pin_entry_size"
+        android:layout_height="@dimen/pin_entry_size"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/circular_white_bg"
+        android:gravity="center"
+        android:text="@string/masked_input"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/tvFour"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="4"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSeven"
+        app:layout_constraintEnd_toEndOf="@+id/tvSeven"
+        app:layout_constraintStart_toStartOf="@+id/tvSeven" />
+
+    <TextView
+        android:id="@+id/tvFive"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="5"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvEight"
+        app:layout_constraintEnd_toStartOf="@+id/tvSix"
+        app:layout_constraintStart_toEndOf="@+id/tvFour" />
+
+    <TextView
+        android:id="@+id/tvSix"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="6"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvNine"
+        app:layout_constraintEnd_toEndOf="@+id/tvNine"
+        app:layout_constraintStart_toStartOf="@+id/tvNine" />
+
+    <TextView
+        android:id="@+id/tvSeven"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="7"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvCancel"
+        app:layout_constraintEnd_toEndOf="@+id/tvCancel"
+        app:layout_constraintStart_toStartOf="@+id/tvCancel" />
+
+    <TextView
+        android:id="@+id/tvEight"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="8"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvZero"
+        app:layout_constraintEnd_toStartOf="@+id/tvNine"
+        app:layout_constraintStart_toEndOf="@+id/tvSeven" />
+
+    <TextView
+        android:id="@+id/tvNine"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/circular_white_bg"
+        android:gravity="center"
+        android:text="9"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="X"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvZero"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvZero"
+        android:layout_width="@dimen/pin_button_size"
+        android:layout_height="@dimen/pin_button_size"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/circular_white_bg"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvEight"
+        app:layout_constraintStart_toStartOf="@+id/tvEight" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Please Enter Pin To Proceed"
+        android:textSize="@dimen/text_size_large"
+
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@+id/tvFour"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="info message"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/textView16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

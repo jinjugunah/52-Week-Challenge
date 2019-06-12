@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">52 WeekChallenge</string>
+    <string name="splash_welcome_message">Welcome to 52 week\n savings Challenge</string>
+    <string name="powered_by_tagline">Powered By</string>
+    <string name="login">Login</string>
+    <string name="login_instructions">Provide account details to login</string>
+    <string name="register_create_account">Create Account</string>
+    <string name="login_pin_hint">PIN</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="forgot_pin">Forgot PIN?</string>
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="masked_input">*</string>
+    <string name="national_id_passport">National ID/Passport</string>
+    <string name="verification_message_info">We have sent you a verification message on @phone. Please enter it below. If it does not arrive within five minutes, please retry</string>
+    <string name="verification_code">Code</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="currency">KES</string>
+    <string name="registration_success_message">Registration Successful</string>
+    <string name="registration_failed_message">Registration Failed</string>
+    <string name="invalid_username_or_password">Invalid username/Password</string>
+    <string name="week_label">Week #</string>
+</resources>
