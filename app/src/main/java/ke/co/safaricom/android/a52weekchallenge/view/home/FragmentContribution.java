@@ -65,7 +65,7 @@ public class FragmentContribution extends Fragment {
         mViewModel.makeContribution(contributionModel,getContext()).observe(this, response->{
             if(response){
                 ToastService.displayToast(getContext(),"Contribution Successful");
-                getActivity().onBackPressed();
+                getActivity().recreate();
             }
         });
     }

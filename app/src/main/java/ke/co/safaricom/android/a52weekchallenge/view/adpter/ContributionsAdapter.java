@@ -34,7 +34,7 @@ public class ContributionsAdapter extends RecyclerView.Adapter<ContributionsAdap
     public void onBindViewHolder(@NonNull ContributionViewHolder holder, int position) {
         ContributionModel contributionModel = contributionModels.get(position);
         holder.tvAmount.setText(contributionModel.getAmount()+holder.itemView.getContext().getString(R.string.currency));
-        holder.tvWeekCount.setText(holder.itemView.getContext().getString(R.string.week_label)+position);
+        holder.tvWeekCount.setText(holder.itemView.getContext().getString(R.string.week_label)+(position+1));
         holder.tvTransactionCode.setText(contributionModel.getConfirmationCode());
         holder.tvTransactionDate.setText(contributionModel.getDate());
     }

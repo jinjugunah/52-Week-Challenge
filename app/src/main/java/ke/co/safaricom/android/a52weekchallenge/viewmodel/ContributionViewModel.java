@@ -26,7 +26,9 @@ public class ContributionViewModel extends ViewModel {
     private MutableLiveData<List<ContributionModel>> contributionModelListLiveData = new MutableLiveData<>();
 
     public LiveData<Boolean> makeContribution(ContributionModel contributionModel, Context context){
-        createContribution(contributionModel,context);
+
+            createContribution(contributionModel, context);
+
         return makeContributionResult;
     }
 

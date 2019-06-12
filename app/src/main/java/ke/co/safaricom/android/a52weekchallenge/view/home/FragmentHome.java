@@ -26,6 +26,10 @@ import ke.co.safaricom.android.a52weekchallenge.util.ToastService;
 import ke.co.safaricom.android.a52weekchallenge.view.adpter.ContributionsAdapter;
 import ke.co.safaricom.android.a52weekchallenge.viewmodel.ContributionViewModel;
 
+/**
+ * This Fragment guides provides functionality that enable the client
+ * Make contributions to the challenge
+ */
 public class FragmentHome extends Fragment {
     public static FragmentHome newInstance(){
         return new FragmentHome();
@@ -50,14 +54,14 @@ public class FragmentHome extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mainView = inflater.inflate(R.layout.fragment_home,container,false);
         ButterKnife.bind(this,mainView);
-
+        init();
         return mainView;
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        init();
+        //init();
     }
 
     @OnClick(R.id.menu_contribute)
@@ -78,7 +82,7 @@ public class FragmentHome extends Fragment {
                 contributionViewModel.makeContribution(contributionModel,getContext()).observe(this,result->{
                     if(result){
                         ToastService.displayToast(getContext(),"Deposit successfull");
-                        init();
+                        getActivity().recreate();
                     }
                     else{
                         ToastService.displayToast(getContext(),"Deposit Failed");
